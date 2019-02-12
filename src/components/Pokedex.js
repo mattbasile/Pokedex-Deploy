@@ -30,7 +30,7 @@ export default class Pokedex extends Component {
             </div>
             <div className="poke-screen">
               <div className={this.props.isFetchingPokemon ? 'trans-screen' : 'screen'} >
-              {this.props.error ? (<img src={PikaGif}/>) : this.props.isFetchingPokemon ? (<img className="rotate-center" src={PokeBall}/>) : (<img src={this.props.pokemonImg}/>)}
+              {this.props.error ? (<img src={PikaGif}/>) : this.props.isFetchingPokemon ? (<img className="rotate-center poke-ball-img" src={PokeBall}/>) : (<img src={this.props.pokemonImg}/>)}
               </div>
             <div className="corner-style">
             </div>
@@ -62,21 +62,21 @@ export default class Pokedex extends Component {
             <div className="box-3"></div>
           </div>
             <div className="stat-screen-container bg-red-light">
-              <div className="stat-screen text-green align-left">
+              <div className="stat-screen text-green align-left ">
                 {this.props.isFetchingPokemon ? (<h2 className="mt-16">Searching...</h2> )
                 : this.props.error ? (<h2>This Pokemon does not exist, try searching again!</h2>)
                 :(<div>
                     <div className="stat-name">
-                      <h2>Name:</h2>
-                      <p>{this.props.selectedPokemon.name}</p>    
+                      <h4>Name:</h4>
+                      <h2>{this.props.selectedPokemon.name}</h2>    
                     </div>
                     <div className="stat-type">
-                    <h2>Type:</h2>
-                    <div className="moves">{this.props.pokemonTypes.map(type => <p>{type.type.name}</p>)}</div>
+                    <h4>Type:</h4>
+                    <div className="flex">{this.props.pokemonTypes.map(type => <h2>{type.type.name},</h2>)}</div>
                     </div>
                     <div className="stat-moves">
-                    <h2>Moves:</h2>
-                    <div className="moves">{this.props.pokemonMoves.map(move => <p>{move.move.name}</p>)}</div>
+                    <h4>Moves:</h4>
+                    <div className="moves flex flex-wrap w-4/5 mx-auto">{this.props.pokemonMoves.map(move => <h2 className="">{move.move.name}, </h2>)}</div>
                     </div>
                   </div>)
                 
