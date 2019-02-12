@@ -38,11 +38,26 @@ getPokemonById = (e, pokemon) =>{
 
 colorChange = () =>{
     const blue = document.querySelector('.blue-light')
+    const red = document.querySelector('.red-light')
+    const yellow = document.querySelector('.yellow-light')
+    const green = document.querySelector('.green-light')
+    
     blue.classList.add('flashblue')
     setTimeout(()=>{
         blue.classList.remove('flashblue')
-    }, 3000)
-    
+    }, 5000)
+    red.classList.add('flash-red')
+    setTimeout(()=>{
+        red.classList.remove('flash-red')
+    }, 5000)
+    yellow.classList.add('flash-yellow')
+    setTimeout(()=>{
+        yellow.classList.remove('flash-yellow')
+    }, 3500)
+    green.classList.add('flash-green')
+    setTimeout(()=>{
+        green.classList.remove('flash-green')
+    }, 2000)
   }
 
 

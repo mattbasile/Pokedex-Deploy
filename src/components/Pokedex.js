@@ -20,9 +20,9 @@ export default class Pokedex extends Component {
                 <div className="blue-light bg-blue-light ">
                 </div>
                 <div className="three-lights w-1/2">
-                  <div className="light bg-red w-1/3"></div>
-                  <div className="light bg-yellow w-1/3"></div>
-                  <div className="light bg-green w-1/3"></div>
+                  <div className="light red-light bg-red w-1/3"></div>
+                  <div className="light yellow-light bg-yellow w-1/3"></div>
+                  <div className="light green-light bg-green w-1/3"></div>
                 </div>
               </div>
               <div className="box-2"></div>
