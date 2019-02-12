@@ -392,3 +392,16 @@ body {
   width: auto;
   }
 
+/* Media Queries */
+@media only screen and (max-width: 576px) {
+  body {
+    height: 100vh;
+  }
+  .pokedex-container{
+    width: 100%;
+    margin: 30px auto;
+  }
+  .left-pokedex-container{
+    width: 100%;
+  }
+}

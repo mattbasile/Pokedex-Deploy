@@ -42,8 +42,13 @@ export default class Pokedex extends Component {
               </div>
               <i onClick={e => this.props.getPokemonById(e, this.props.selectedPokemon)} className="fas fa-caret-right fwd-btn text-orange-lightest "/>
             </div>
+            <div className="search-bar bg-red-light block sm:hidden">
+              <form onSubmit={this.props.getPokemon}>
+                  <input className="mt-6 bg-grey-lighter appearance-none border-2 border-grey-lighter rounded w-3/5 py-2 px-4 text-grey-darker leading-tight focus:outline-none focus:bg-white focus:border-purple"onChange={this.props.handleChanges} name="searchPoke" type="text" placeholder="Search..."/>
+              </form>
+            </div>
         </div>
-          <div className="divider">
+          <div className="divider hidden sm:block">
             <div className="divider-box"></div>
             <div className="divider-box"></div>
             <div className="divider-box"></div>
@@ -55,7 +60,7 @@ export default class Pokedex extends Component {
           </div>
 
 
-          <div className="right-pokedex-container">
+          <div className="right-pokedex-container hidden sm:block">
             <div className="right-light-cutout ">
             <div className="box-1"></div>
             <div className="box-2"></div>
