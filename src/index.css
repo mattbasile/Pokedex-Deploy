@@ -58,10 +58,10 @@ body {
 }
 .right-light-cutout .box-1,
 .right-light-cutout .box-3 {
-  background: #EF5753;
+  background: #f56565;
 }
 .right-light-cutout .box-2{
-  border-left: 59px solid #EF5753;
+  border-left: 59px solid #f56565;
 }
 .box-1{
   width: 50%;
@@ -142,7 +142,7 @@ body {
   bottom: 0;
   width: 0;
   height: 0;
-  border-bottom: 40px solid #EF5753;
+  border-bottom: 40px solid #f56565;
   border-right: 40px solid transparent;
 }
 
@@ -176,7 +176,8 @@ body {
   padding: 10px 7px;
   font-size: 2rem;
   border-radius: 3px;
-  font-family: 'Digital Clock'
+  font-family: 'Digital Clock';
+  text-align: center;
 }
 /* 
 .left-triangle{
@@ -372,9 +373,9 @@ body {
 .stat-name h2,
 .stat-type h2,
 .stat-moves h2 {
-  font-size: 1.6em;
+  font-size: 1.4em;
   font-family: "Digital Clock";
-  margin: 2px 0 0 7px;
+  margin: 5px 0 0 7px;
 }
 
 
