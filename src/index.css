@@ -152,6 +152,7 @@ body {
   height:100%;
   margin: 0 auto;
   align-self: center;
+  padding: 15px;
 }
 .trans-screen img{
   /* border: none; 
